@@ -44,7 +44,7 @@ api_key = "UwoEtNGJ3Xk8hh9H_vhs0VRVfQkn1vg0j52MGQ8tiwbg1nAKsQu9"
 Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement classées en sévérité basse.
 
 # 📄 Exemple de rapport JSON
-
+```json
 "scan_info": {
         "files_scanned": 6,
         "secrets_found": 3
@@ -59,7 +59,7 @@ Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement class�
             "value_hash": "e0c19fe52619f6b0e176812390bc0a916dce561e13be12acb6766aa58eeb5ffa",
             "reason": "Possible Hardcode detected !"
         }
-
+```
 
 # ▶️ Utilisation:
 ```python
@@ -74,5 +74,6 @@ python hardcode_scanner.py <path> --export <json_output>
 
 
 - Pas d’intégration CI automatique (GitHub Actions)
+
 
 
