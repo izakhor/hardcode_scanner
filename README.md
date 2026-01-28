@@ -43,7 +43,7 @@ api_key = "UwoEtNGJ3Xk8hh9H_vhs0VRVfQkn1vg0j52MGQ8tiwbg1nAKsQu9"
 ```
 Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement classées en sévérité basse.
 
-# Exemple de rapport JSON
+# 📄 Exemple de rapport JSON
 
 "scan_info": {
         "files_scanned": 6,
@@ -61,9 +61,9 @@ Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement class�
         }
 
 
-# Utilisation:
+# ▶️ Utilisation:
 ```python
-python hardcode_scanner.py <path> --export <json_output>"
+python hardcode_scanner.py <path> --export <json_output>
 ```
 
 🔐 Limites connues
@@ -74,4 +74,5 @@ python hardcode_scanner.py <path> --export <json_output>"
 
 
 - Pas d’intégration CI automatique (GitHub Actions)
+
 
