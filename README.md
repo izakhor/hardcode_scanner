@@ -3,7 +3,7 @@
 Un **scanner de secrets et hardcoded credentials** écrit en Python.  
 Il permet de détecter des mots de passe, API keys, tokens et autres secrets potentiellement exposés dans un dépôt ou un dossier.
 
-👉 Projet orienté **cybersécurité / SAST léger**, pensé pour être **CI-ready** et lisible par des recruteurs.
+👉 Projet personnel orienté **cybersécurité**
 
 ---
 
@@ -16,6 +16,7 @@ Il permet de détecter des mots de passe, API keys, tokens et autres secrets pot
 - 📄 Export d’un **rapport JSON structuré**
 - 🗂️ Support de plusieurs types de fichiers :
   - `.py`, `.js`, `.ts`
+  - `.env`
   - `.yml`, `.yaml`
   - `.json`, `.txt`
 
@@ -30,7 +31,10 @@ Le scanner recherche des patterns courants comme :
 - `secret`
 - `token`
 - `password`
+- `passwd`
+- `pwd`
 - `db_password`
+- `dbpassword`
 
 Exemple détecté :
 
@@ -39,7 +43,7 @@ api_key = "UwoEtNGJ3Xk8hh9H_vhs0VRVfQkn1vg0j52MGQ8tiwbg1nAKsQu9"
 ```
 Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement classées en sévérité basse.
 
-Exemple de rapport JSON
+# Exemple de rapport JSON
 
 "scan_info": {
         "files_scanned": 6,
@@ -57,9 +61,10 @@ Exemple de rapport JSON
         }
 
 
-Utilisation:
-
-"python hardcode_scanner.py <path> --export <json_output>"
+# Utilisation:
+```python
+python hardcode_scanner.py <path> --export <json_output>"
+```
 
 🔐 Limites connues
 
@@ -69,3 +74,4 @@ Utilisation:
 
 
 - Pas d’intégration CI automatique (GitHub Actions)
+
