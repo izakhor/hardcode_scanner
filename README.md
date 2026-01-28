@@ -47,11 +47,11 @@ Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement class�
 ```json
 "scan_info": {
         "files_scanned": 6,
-        "secrets_found": 3
+        "secrets_found": 1
     },
     "findings": [
         {
-            "file": "/home/seika/Documents/hardcode/abc/aaaa.txt",
+            "file": "/home/user/Documents/hardcode/abc/aaaa.txt",
             "line_number": 2,
             "severity": "High",
             "keyword": "password",
@@ -74,6 +74,7 @@ python hardcode_scanner.py <path> --export <json_output>
 
 
 - Pas d’intégration CI automatique (GitHub Actions)
+
 
 
 
