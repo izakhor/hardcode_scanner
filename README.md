@@ -62,6 +62,7 @@ Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement class�
 ```
 
 ## ▶️ Utilisation:
+
 ```python
 python hardcode_scanner.py <path> --export <json_output>
 ```
@@ -78,6 +79,7 @@ python hardcode_scanner.py <path> --export <json_output>
 
 - Possibilité d'ajouter des valeurs de test
 - Possibilité d'ajouter des mots clés pour convenir à vos fichiers
+
 
 
 
