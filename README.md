@@ -21,19 +21,6 @@ Il permet de détecter des mots de passe, API keys, tokens et autres secrets pot
 
 ---
 
-## 📁 Structure du projet
-
-Hardcode-Scanner/
-├── hardcode/
-│ ├── test.txt
-│ ├── bar.py
-│ └── ...
-├── scanner.py
-├── scanner_report.json
-└── README.md
-
----
-
 ## 🧠 Détection des secrets
 
 Le scanner recherche des patterns courants comme :
@@ -49,7 +36,7 @@ Exemple détecté :
 
 ```python
 api_key = "UwoEtNGJ3Xk8hh9H_vhs0VRVfQkn1vg0j52MGQ8tiwbg1nAKsQu9"
-
+```
 Les valeurs connues comme test, changeme, 1234, etc. sont automatiquement classées en sévérité basse.
 
 Exemple de rapport JSON
@@ -79,5 +66,6 @@ Utilisation:
 - Pas encore de faux positifs avancés
 
 - Pas de scan de secrets encodés (Base64, etc.)
+
 
 - Pas d’intégration CI automatique (GitHub Actions)
